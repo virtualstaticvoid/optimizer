@@ -1,0 +1,56 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    clbustos-rtf (0.4.2)
+    dirty-memoize (0.0.4)
+    distribution (0.5.0)
+    extendmatrix (0.3.1)
+    fastercsv (1.5.4)
+    gsl (1.14.7)
+      narray (>= 0.5.9)
+    minimization (0.2.1)
+      text-table (~> 1.2)
+    narray (0.5.9.9)
+    prawn (0.8.4)
+      prawn-core (< 0.9, >= 0.8.4)
+      prawn-layout (< 0.9, >= 0.8.4)
+      prawn-security (< 0.9, >= 0.8.4)
+    prawn-core (0.8.4)
+    prawn-layout (0.8.4)
+    prawn-security (0.8.4)
+    prawn-svg (0.9.1.10)
+      prawn (>= 0.8.4)
+      prawn-core (>= 0.8.4)
+    reportbuilder (1.4.1)
+      clbustos-rtf (~> 0.4.0)
+      prawn (~> 0.8.4)
+      prawn-svg (~> 0.9.1)
+      text-table (~> 1.2)
+    rserve-client (0.2.5)
+    rsruby (0.5.1.1)
+    ruby-ole (1.2.11.1)
+    rubyvis (0.4.1)
+    spreadsheet (0.6.5.5)
+      ruby-ole (>= 1.0)
+    statsample (1.1.0)
+      dirty-memoize (~> 0.0)
+      distribution (~> 0.3)
+      extendmatrix (~> 0.3.1)
+      fastercsv (> 0)
+      minimization (~> 0.2.0)
+      reportbuilder (~> 1.4)
+      rserve-client (~> 0.2.5)
+      rubyvis (~> 0.4.0)
+      spreadsheet (~> 0.6.5)
+      statsample-bivariate-extension (> 0)
+    statsample-bivariate-extension (0.16.1)
+    text-table (1.2.2)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  gsl
+  minimization
+  rsruby
+  statsample
