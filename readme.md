@@ -4,7 +4,7 @@ Performs minimization to solve for factor weights using multi-dimensional constr
 ## Problem
 The following formula shows the objective and constraints of the problem.
 
-![Formula](https://github.com/virtualstaticvoid/optimizer/blob/master/doc/formula.png)
+![Formula](https://github.com/virtualstaticvoid/optimizer/raw/master/doc/formula.png)
 
 ## Implementation
 
