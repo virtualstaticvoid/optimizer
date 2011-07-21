@@ -9,4 +9,8 @@ The following formula shows the objective and constraints of the problem.
 ## Implementation
 
 * GSL FMinimizer (currently without constraints )
+* R Implementations, using the following solvers:
+** [Rdonlp2](https://r-forge.r-project.org/scm/viewvc.php/pkg/Rdonlp2/?root=rmetrics)
+** [Rnlminb2](https://r-forge.r-project.org/scm/viewvc.php/pkg/Rnlminb2/?root=rmetrics)
+** [Rsolnp2](https://r-forge.r-project.org/scm/viewvc.php/pkg/Rsolnp2/?root=rmetrics)
 
