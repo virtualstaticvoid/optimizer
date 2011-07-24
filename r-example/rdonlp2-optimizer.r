@@ -60,25 +60,17 @@ fund_returns <- c(
 
 objective <- function(weights) {
 
-   # ASSERT: ncol(factors) == length(weights)
-   
-   # calculate the sum product of factors and weights
-   #  (there is probably a better way to do this in R (but me not knows how)... a one liner I suspect :)
-   residuals <- rep(c(0), nrow(factors))
-   for(i in 1:nrow(factors))
-   {
-     t <- 0
-     for(j in 1:ncol(factors))
-     {
-       t <- t + (factors[i, j] * weights[j])
-     }
-     # calculate the residual
-     residuals[i] <- t - fund_returns[i]
-   }
- 
-   # calculate (and return) the stdev of the residuals
-   sd(residuals)
-
+  # ASSERT: ncol(factors) == length(weights)
+  
+  # calculate the sum product of factors and weights
+  sum_product <- factors %*% matrix(weights, ncol=1)
+  sum_product_return <- cbind(sum_product, fund_returns)
+  residuals <- sum_product_return[, 2] - sum_product_return[, 1]
+  
+  # ASSERT: nrow(factors) == length(residuals)
+  
+  # calculate (and return) the stdev of the residuals
+  sd(residuals)
 }
 
 weights <- c(0.25, 0.25, 0.25, 0.25)   # start weights
