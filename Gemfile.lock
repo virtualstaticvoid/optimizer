@@ -26,6 +26,7 @@ GEM
       prawn (~> 0.8.4)
       prawn-svg (~> 0.9.1)
       text-table (~> 1.2)
+    rinruby (2.0.2)
     rserve-client (0.2.5)
     rsruby (0.5.1.1)
     ruby-ole (1.2.11.1)
@@ -52,5 +53,6 @@ PLATFORMS
 DEPENDENCIES
   gsl
   minimization
+  rinruby
   rsruby
   statsample
